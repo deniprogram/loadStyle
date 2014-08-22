@@ -1,14 +1,23 @@
  (function( $ ){
 
 
-                $.fn.squarecarrying = function(){
+           
+	$.fn.squarecarrying = function(){
 
                     return this.each(function() {
-                         css("background","#000");
+			var eleDiv = $("div[ng-load=quadrado]");
+                         eleDiv.css({width:0,height:10});		        
+
+			eleDiv.animate({
+			width:100,marginTop:"20px"
+
+			});
+
+
+
                     });
 
                 }
-
 
 
             $.fn.loadLine = function(options,height) {
