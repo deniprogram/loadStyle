@@ -3,22 +3,30 @@
     <title>jquery</title>
     <meta charset="UTF-8">
 
-
+<link type="text/css" href="css/style.css">
 <script type="text/javascript" src = "js/jquery-2.1.1.min.js" ></script>
 <script type="text/javascript" src = "js/onload.js" ></script>
-
+<style>
+    *[class*=seta-] {
+        width: 0;
+        height: 0;
+    }
+    .seta-cima {
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid #aaa;
+    }
+</style>
     <script type = "text/javascript">
- 
+
         $(function(){
 
-            $(document).squarecarrying(); // chamando função
+            $(document).loadLine(); // chamando função
 
            });
     </script>
 
 <body>
-
-<div ng-load = "quadrado" style="background: #000;"></div>
-
+<div class="seta-cima"></div>
 </body>
 </html>
